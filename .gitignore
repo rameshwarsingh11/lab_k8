@@ -1,0 +1,94 @@
+# macOS
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+venv/
+.env
+.venv/
+
+# Build outputs
+dist/
+build/
+.tmp/
+
+# Logs
+logs/
+*.log
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+docker-compose.local.yml
+
+# Terraform
+.terraform/
+terraform.tfstate*
+terraform.tfvars
+crash.log
+
+# Helm
+charts/*.tgz
+.helm/
+helmfile.lock
+
+# Kubernetes
+# Ignore local kubeconfigs and credential files
+.kube/
+.kubeconfig
+kubeconfig
+*.kubeconfig
+# Common manifest artifacts and secrets
+secrets.yaml
+*.secret
+
+# Certificates/keys
+*.crt
+*.key
+*.pem
+*.p12
+
+# Misc
+*.bak
+*.tmp
+*.orig
+*.swp
+
+# IDE/workspace-specific
+LocalSettings.php
+
+# macOS Finder metadata
+.AppleDouble
+.LSOverride
+
+# Prevent accidentally committing sensitive env files
+.env.local
+.env.*.local
+.env.*
+
+# VS Code settings/workspace storage
+.vscode/settings.json
+.vscode/.history/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Keep generated Helm chart packages out
+*.tgz
