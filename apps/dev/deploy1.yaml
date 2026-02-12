@@ -17,6 +17,8 @@ spec:
       containers:
       - image: httpd:alpine3.23
         name: httpd
+        command: ["sleep", "3600"]
+        args: ["sh", "-c", "sleep 2; exit 1"]
 
   strategy:
     type: RollingUpdate
